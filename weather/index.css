@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0%;
+    background-color: linear-gradiet(300deg, #757b87, #909d9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    
+}
+.main-div {
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: #a5bbdd;
+    font-family: inherit;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    min-height: 350px;
+    font-size: 1.1rem;
+    display: flex;
+     display: block;
+     flex-wrap: wrap;
+    
+}
+
+.input{
+     margin: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    
+    
+    
+      
+}
+.input .int {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 90%;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    height: 20%;
+    text-align: center;
+}
+
+.loc{
+    align-items: center;
+    text-align: center;
+}
+.weath{
+    text-align: center;
+}
+.min-max{
+    text-align: center;
+    font: 1em sans-serif;
+}
+.wave{
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: white;
+    width: 50rem;
+    height: 50rem;
+    margin-left: -25rem;
+    margin-top: -20rem;
+    transform-origin: 50% 48%;
+    border-radius: 43% ;
+    animation: drift 3400ms infinite linear;
+    z-index: 1;
+}
+.wave-three {
+     animation: drift 5000ms infinite linear;
+     z-index: 2 !important;
+     opacity: 0.2;
+}
+.wave-two {
+    animation: drift 7000ms infinite linear;
+    z-index: 3!important;;
+    opacity: 0.1 ;
+}
+@keyframes drift {
+    from {
+        transform: rotate(40deg);
+     }
+        form {
+            transform:rotate(400px);
+        }
+        
+    }
+
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-1"] {
+          width: 100%;
+        }
+    }
+    
